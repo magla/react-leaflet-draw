@@ -67,6 +67,7 @@ function EditControl(props) {
   }, []);
 
   React.useEffect(() => {
+    debugger;
     if (
       isEqual(props.draw, propsRef.current.draw) &&
       isEqual(props.edit, propsRef.current.edit) &&
