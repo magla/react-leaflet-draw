@@ -67,14 +67,6 @@ function EditControl(props) {
   }, []);
 
   React.useEffect(() => {
-    console.log(isEqual(props.draw, propsRef.current.draw), isEqual(props.edit, propsRef.current.edit));
-    if (
-      isEqual(props.draw, propsRef.current.draw) &&
-      isEqual(props.edit, propsRef.current.edit) &&
-      props.position === propsRef.current.position
-    ) {
-      return false;
-    }
     const { map } = context;
 
     drawRef.current.remove(map);
